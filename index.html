@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TaskFlow – The intelligent task management platform that helps teams move faster, collaborate better, and ship on time." />
+  <title>TaskFlow – Ship More, Stress Less</title>
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       SKIP LINK (Accessibility)
+       ============================================= -->
+  <a href="#main" class="sr-only" style="position:fixed;top:1rem;left:1rem;z-index:999;background:var(--clr-accent);color:#fff;padding:0.6rem 1rem;border-radius:var(--r-sm);font-weight:700" onfocus="this.style.clip='unset'" onblur="this.style.clip='rect(0,0,0,0)'">
+    Skip to main content
+  </a>
+
+  <!-- =============================================
+       NAVBAR
+       ============================================= -->
+  <header role="banner">
+    <nav id="navbar" aria-label="Main navigation">
+      <div class="container nav-inner">
+
+        <!-- Logo -->
+        <a href="#" class="nav-logo" aria-label="TaskFlow home">
+          <div class="logo-icon" aria-hidden="true">⚡</div>
+          TaskFlow
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Switch to light mode">
+            <span class="theme-icon" aria-hidden="true">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <!-- Hamburger (mobile) -->
+        <button
+          id="hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="ham-line" aria-hidden="true"></span>
+          <span class="ham-line" aria-hidden="true"></span>
+          <span class="ham-line" aria-hidden="true"></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile nav drawer -->
+    <nav id="mobile-nav" aria-label="Mobile navigation" role="navigation">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem">Get Started</a>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       MAIN CONTENT
+       ============================================= -->
+  <main id="main">
+
+    <!-- ─── HERO SECTION ────────────────────────── -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-glow"  aria-hidden="true"></div>
+      <div class="hero-glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+
+        <!-- Copy -->
+        <div class="hero-content reveal">
+          <div class="hero-eyebrow">
+            <span class="badge">🚀 Now in public beta</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            Ship more.<br />
+            <span class="gradient-text">Stress less.</span>
+          </h1>
+
+          <p class="hero-sub">
+            TaskFlow turns your team's chaos into a clear, prioritised workflow — so you spend less time in meetings and more time doing the work that matters.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              Start free trial <span aria-hidden="true">→</span>
+            </a>
+            <a href="#features" class="btn btn-ghost">See how it works</a>
+          </div>
+
+          <div class="hero-proof" aria-label="Social proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <div class="avatar">MK</div>
+              <div class="avatar">JT</div>
+              <div class="avatar">SR</div>
+              <div class="avatar">+</div>
+            </div>
+            <span><strong>4,200+</strong> teams already onboard</span>
+          </div>
+        </div>
+
+        <!-- App mockup -->
+        <div class="hero-visual reveal">
+          <div class="hero-app-mockup" role="img" aria-label="TaskFlow application interface preview">
+            <div class="mockup-topbar" aria-hidden="true">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-amber"></span>
+              <span class="dot dot-green"></span>
+              <span style="margin-left:auto;font-size:0.72rem;color:var(--clr-muted)">Sprint 14 · Week 3</span>
+            </div>
+            <div class="mockup-tasks" aria-hidden="true">
+              <div class="mock-task">
+                <div class="task-check done"></div>
+                <span class="task-label striked">Design system audit</span>
+                <span class="task-tag tag-green">Done</span>
+              </div>
+              <div class="mock-task">
+                <div class="task-check done"></div>
+                <span class="task-label striked">API integration review</span>
+                <span class="task-tag tag-blue">Dev</span>
+              </div>
+              <div class="mock-task">
+                <div class="task-check"></div>
+                <span class="task-label">Write release notes</span>
+                <span class="task-tag tag-amber">In progress</span>
+              </div>
+              <div class="mock-task">
+                <div class="task-check"></div>
+                <span class="task-label">QA regression suite</span>
+                <span class="task-tag tag-purple">Testing</span>
+              </div>
+              <div class="mock-task">
+                <div class="task-check"></div>
+                <span class="task-label">Deploy to staging</span>
+                <span class="task-tag tag-blue">Dev</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating stat cards -->
+          <div class="float-card float-card-1" aria-hidden="true">
+            <div class="float-stat">38%</div>
+            <div class="float-label">Faster delivery</div>
+          </div>
+          <div class="float-card float-card-2" aria-hidden="true">
+            <div class="float-stat">2.4×</div>
+            <div class="float-label">Team velocity</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ─── FEATURES SECTION ─────────────────────── -->
+    <section id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="badge">Features</span>
+          <h2 class="section-title" id="features-heading">
+            Everything your team needs,<br />
+            <span class="gradient-text">nothing it doesn't</span>
+          </h2>
+          <p class="section-desc">
+            Six core capabilities that remove friction and help your team reach flow state faster.
+          </p>
+        </header>
+
+        <div class="features-grid stagger" role="list">
+
+          <article class="feature-card reveal" role="listitem" aria-labelledby="f1">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3 class="feature-title" id="f1">Instant task creation</h3>
+            <p class="feature-desc">
+              Capture ideas in seconds from any device. Voice input, keyboard shortcuts, and smart templates keep you in flow.
+            </p>
+          </article>
+
+          <article class="feature-card reveal" role="listitem" aria-labelledby="f2">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3 class="feature-title" id="f2">Real-time dashboards</h3>
+            <p class="feature-desc">
+              Live sprint boards, velocity charts, and burndown graphs give every stakeholder a single source of truth.
+            </p>
+          </article>
+
+          <article class="feature-card reveal" role="listitem" aria-labelledby="f3">
+            <div class="feature-icon" aria-hidden="true">🤝</div>
+            <h3 class="feature-title" id="f3">Collaborative workspaces</h3>
+            <p class="feature-desc">
+              Comment, mention, and co-edit tasks. Threaded discussions keep context where the work actually happens.
+            </p>
+          </article>
+
+          <article class="feature-card reveal" role="listitem" aria-labelledby="f4">
+            <div class="feature-icon" aria-hidden="true">🔗</div>
+            <h3 class="feature-title" id="f4">500+ integrations</h3>
+            <p class="feature-desc">
+              Sync with Slack, GitHub, Figma, Notion, and hundreds more. TaskFlow fits into your stack, not the other way round.
+            </p>
+          </article>
+
+          <article class="feature-card reveal" role="listitem" aria-labelledby="f5">
+            <div class="feature-icon" aria-hidden="true">🤖</div>
+            <h3 class="feature-title" id="f5">AI priority engine</h3>
+            <p class="feature-desc">
+              Smart suggestions surface the next most-impactful task, based on deadlines, dependencies, and team capacity.
+            </p>
+          </article>
+
+          <article class="feature-card reveal" role="listitem" aria-labelledby="f6">
+            <div class="feature-icon" aria-hidden="true">🔒</div>
+            <h3 class="feature-title" id="f6">Enterprise-grade security</h3>
+            <p class="feature-desc">
+              SOC 2 Type II, SSO, granular role permissions, and end-to-end encryption so your data stays yours.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ─── PRICING SECTION ───────────────────────── -->
+    <section id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="badge">Pricing</span>
+          <h2 class="section-title" id="pricing-heading">
+            Transparent pricing,<br />
+            <span class="gradient-text">no surprises</span>
+          </h2>
+          <p class="section-desc">
+            Start free, scale as you grow. Every plan includes a 14-day trial — no credit card required.
+          </p>
+        </header>
+
+        <div class="pricing-grid stagger" role="list">
+
+          <!-- Starter -->
+          <div class="pricing-card reveal" role="listitem" aria-labelledby="plan-starter">
+            <div>
+              <p class="plan-name" id="plan-starter">Starter</p>
+              <div class="plan-price" aria-label="Free">
+                <span class="price-amount">$0</span>
+                <span class="price-period">/ mo</span>
+              </div>
+            </div>
+            <p class="plan-desc">Perfect for freelancers and small teams getting started with structured task management.</p>
+            <ul class="plan-features" aria-label="Starter plan features">
+              <li>Up to 5 team members</li>
+              <li>10 active projects</li>
+              <li>Basic dashboards</li>
+              <li>iOS &amp; Android apps</li>
+              <li>Community support</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost plan-cta">Get started free</a>
+          </div>
+
+          <!-- Professional (featured) -->
+          <div class="pricing-card featured reveal" role="listitem" aria-labelledby="plan-pro" aria-describedby="plan-pro-badge">
+            <span class="featured-badge" id="plan-pro-badge">⭐ Most popular</span>
+            <div>
+              <p class="plan-name" id="plan-pro">Professional</p>
+              <div class="plan-price" aria-label="29 dollars per month">
+                <span class="price-amount gradient-text">$29</span>
+                <span class="price-period">/ mo</span>
+              </div>
+            </div>
+            <p class="plan-desc">For growing teams that need advanced automation, integrations, and in-depth analytics.</p>
+            <ul class="plan-features" aria-label="Professional plan features">
+              <li>Up to 25 team members</li>
+              <li>Unlimited projects</li>
+              <li>AI priority engine</li>
+              <li>500+ integrations</li>
+              <li>Advanced analytics</li>
+              <li>Priority email support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary plan-cta">Start 14-day trial</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="pricing-card reveal" role="listitem" aria-labelledby="plan-enterprise">
+            <div>
+              <p class="plan-name" id="plan-enterprise">Enterprise</p>
+              <div class="plan-price" aria-label="Custom pricing">
+                <span class="price-amount">Custom</span>
+              </div>
+            </div>
+            <p class="plan-desc">Tailored for large organisations needing SSO, audit logs, SLA guarantees, and dedicated support.</p>
+            <ul class="plan-features" aria-label="Enterprise plan features">
+              <li>Unlimited members</li>
+              <li>SSO / SAML 2.0</li>
+              <li>SOC 2 Type II</li>
+              <li>Dedicated CSM</li>
+              <li>Custom SLA</li>
+              <li>Audit logs &amp; SIEM</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost plan-cta">Talk to sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ─── BLOG SECTION (API) ────────────────────── -->
+    <section id="blog" aria-labelledby="blog-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="badge">Blog</span>
+          <h2 class="section-title" id="blog-heading">
+            From the TaskFlow<br />
+            <span class="gradient-text">playbook</span>
+          </h2>
+          <p class="section-desc">
+            Tips, case studies, and deep dives on shipping faster and managing teams better.
+          </p>
+        </header>
+
+        <!-- Blog cards injected by JS -->
+        <div
+          id="blog-grid"
+          class="blog-grid"
+          aria-live="polite"
+          aria-label="Latest blog posts"
+        >
+          <!-- Populated by fetchPosts() -->
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ─── CONTACT SECTION ───────────────────────── -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Info -->
+          <div class="contact-info reveal">
+            <div>
+              <span class="badge" style="margin-bottom:var(--sp-sm);display:inline-block">Get in touch</span>
+              <h2 class="contact-headline" id="contact-heading">
+                Let's build<br />
+                <span class="gradient-text">something great</span>
+              </h2>
+            </div>
+            <p style="color:var(--clr-muted);font-size:0.95rem;line-height:1.7">
+              Whether you have a question, want a live demo, or are ready to migrate your whole team — we're here for it.
+            </p>
+            <div class="contact-detail" aria-label="Contact details">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📧</div>
+                <span>hello@taskflow.io</span>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📞</div>
+                <span>+1 (800) 123-4567</span>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📍</div>
+                <span>San Francisco, CA — Remote-first team</span>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">⏱️</div>
+                <span>Typical response within 4 hours</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="reveal">
+            <form
+              id="contact-form"
+              class="contact-form"
+              novalidate
+              aria-labelledby="contact-heading"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">
+                    Full name <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    placeholder="Jane Smith"
+                    data-validate="name"
+                    aria-required="true"
+                    aria-describedby="name-error"
+                  />
+                  <span id="name-error" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    Email <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="jane@company.com"
+                    data-validate="email"
+                    aria-required="true"
+                    aria-describedby="email-error"
+                  />
+                  <span id="email-error" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">
+                  Message <span class="required" aria-hidden="true">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your team and what you're hoping to achieve…"
+                  data-validate="message"
+                  aria-required="true"
+                  aria-describedby="message-error"
+                ></textarea>
+                <span id="message-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+
+              <button type="submit" class="btn btn-primary submit-btn">
+                Send Message <span aria-hidden="true">→</span>
+              </button>
+
+              <p style="font-size:0.75rem;color:var(--clr-muted);text-align:center">
+                We'll never share your details. See our <a href="#" style="color:var(--clr-accent)">Privacy Policy</a>.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="TaskFlow home" style="font-size:1.2rem">
+            <div class="logo-icon" aria-hidden="true">⚡</div>
+            TaskFlow
+          </a>
+          <p class="footer-tagline">
+            The intelligent task management platform built for teams that care about shipping great work.
+          </p>
+        </div>
+
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <ul role="list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press kit</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Legal links">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 TaskFlow Inc. All rights reserved.</span>
+        <span>Made with ⚡ for productive teams</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Deferred JS -->
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>
