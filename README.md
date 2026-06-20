@@ -1,3 +1,10 @@
+## Live Demo
+
+https://tubular-gaufre-bd4544.netlify.app/
+
+## GitHub Repository
+
+https://github.com/khathija1511/o2h-frontend-task
 # TaskFlow – Front-End Developer Assessment
 
 A fully responsive SaaS landing page built for the O2H mock front-end developer assessment.
@@ -51,9 +58,9 @@ frontend-task/
 - Uses: CSS Grid, Flexbox, media queries, `min()` / `clamp()` for fluid sizing
 
 ### Section 3 – JavaScript (15 marks)
-- ✅ Mobile menu toggle with ARIA states and focus trap
-- ✅ Form validation (required fields + email format) with live error messages
-- ✅ Dark / light mode toggle persisted in `localStorage`
+-  Mobile menu toggle with ARIA states and focus trap
+-  Form validation (required fields + email format) with live error messages
+-  Dark / light mode toggle persisted in `localStorage`
 
 ### Section 4 – Accessibility (10 marks)
 - Semantic HTML5 landmarks (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
