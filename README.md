@@ -1,3 +1,7 @@
+# TaskFlow – O2H Front-End Developer Assessment
+
+A fully responsive SaaS landing page built as part of the O2H Front-End Developer Assessment using HTML5, CSS3, and JavaScript.
+
 ## Live Demo
 
 https://tubular-gaufre-bd4544.netlify.app/
@@ -5,125 +9,159 @@ https://tubular-gaufre-bd4544.netlify.app/
 ## GitHub Repository
 
 https://github.com/khathija1511/o2h-frontend-task
-# TaskFlow – Front-End Developer Assessment
-
-A fully responsive SaaS landing page built for the O2H mock front-end developer assessment.
-
-## Live Demo
-
-Deploy to Netlify or Vercel by dragging the `frontend-task/` folder into their respective dashboards.
 
 ---
 
-## Tech Stack
+## Project Overview
 
-| Layer | Choice |
-|-------|--------|
-| HTML | HTML5 with semantic landmarks & ARIA |
-| CSS | Custom CSS3 (no frameworks) — Flexbox + CSS Grid + custom properties |
-| JS | Vanilla ES6+ (no build step required) |
-| Fonts | Google Fonts: Syne (display) + Inter (body) |
-| API | JSONPlaceholder `https://jsonplaceholder.typicode.com/posts` |
+TaskFlow is a modern SaaS landing page designed to showcase front-end development skills including responsive design, JavaScript functionality, accessibility, performance optimization, and API integration.
+
+The project follows industry-standard development practices and provides a smooth user experience across desktop, tablet, and mobile devices.
+
+---
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* CSS Grid
+* Flexbox
+* Local Storage
+* JSONPlaceholder API
+* Git & GitHub
+* Netlify
+
+---
+
+## Features
+
+### Hero Section
+
+* Responsive navigation bar
+* Logo and branding
+* Hero heading and subheading
+* Call-to-action buttons
+* Interactive dashboard mockup
+
+### Features Section
+
+* Six feature cards
+* Responsive card layout
+* Modern UI design
+
+### Pricing Section
+
+* Starter Plan
+* Professional Plan (Highlighted)
+* Enterprise Plan
+
+### Contact Section
+
+* Name field validation
+* Email validation
+* Message validation
+* User-friendly error messages
+
+### Dark Mode
+
+* Light/Dark theme toggle
+* Theme preference saved using localStorage
+
+### Mobile Navigation
+
+* Hamburger menu for mobile devices
+* Smooth navigation experience
+
+### API Integration
+
+* Fetches latest posts from JSONPlaceholder API
+* Loading state handling
+* Error state handling
+
+---
+
+## Responsive Design
+
+The application is fully responsive and optimized for:
+
+* Mobile Devices (<768px)
+* Tablets (768px–1023px)
+* Desktop Screens (1024px and above)
+
+Implemented using:
+
+* CSS Grid
+* Flexbox
+* Media Queries
+
+---
+
+## Accessibility Features
+
+* Semantic HTML structure
+* ARIA labels
+* Keyboard navigation support
+* Alt text where applicable
+* Accessible color contrast
+
+---
+
+## Performance Optimizations
+
+* Optimized CSS structure
+* Efficient DOM manipulation
+* Lazy loading techniques
+* Lightweight JavaScript implementation
 
 ---
 
 ## Project Structure
 
-```
 frontend-task/
-├── index.html          # Single-page app entry
+
+├── index.html
+
 ├── css/
-│   ├── style.css       # Design system, components, animations
-│   └── responsive.css  # Tablet & mobile breakpoints
+
+│ ├── style.css
+
+│ └── responsive.css
+
 ├── js/
-│   └── app.js          # All JS: nav, validation, dark mode, API, reveal
-├── images/             # (placeholder — add your own assets)
-└── README.md
-```
+
+│ └── app.js
+
+├── screenshots/
+
+├── README.md
+
+└── .gitignore
 
 ---
 
-## Features Implemented
+## Screenshots
 
-### Section 1 – Layout (40 marks)
-- **Hero** — Logo, heading, sub-heading, CTA buttons, animated app mockup, floating stat cards
-- **Features** — 6 feature cards with icon, title, description
-- **Pricing** — 3 cards (Starter / Professional / Enterprise), featured plan highlighted
-- **Contact** — Name + Email + Message form with full validation
+Add your project screenshots here:
 
-### Section 2 – Responsive Design (20 marks)
-- **Mobile < 768px** — Hamburger menu, single-column layout
-- **Tablet 768–1023px** — Two-column grid
-- **Desktop ≥ 1024px** — Full three-column layout
-- Uses: CSS Grid, Flexbox, media queries, `min()` / `clamp()` for fluid sizing
-
-### Section 3 – JavaScript (15 marks)
--  Mobile menu toggle with ARIA states and focus trap
--  Form validation (required fields + email format) with live error messages
--  Dark / light mode toggle persisted in `localStorage`
-
-### Section 4 – Accessibility (10 marks)
-- Semantic HTML5 landmarks (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
-- ARIA roles, labels, live regions, and `aria-invalid` on form fields
-- Skip-to-main link
-- Keyboard navigation support throughout
-- `prefers-reduced-motion` media query respected
-- Colour contrast ratio ≥ 4.5:1 across both themes
-
-### Section 5 – Performance (10 marks)
-- CSS custom properties for zero-redundancy theming
-- `IntersectionObserver`-powered scroll-reveal & lazy loading
-- `passive` scroll listeners
-- `defer`red script loading
-- No render-blocking resources
-
-### Bonus – API Integration (+10 marks)
-- Fetches 6 posts from `https://jsonplaceholder.typicode.com/posts?_limit=6`
-- Shows skeleton loading state while fetching
-- Shows error state with retry button on failure
-- Request timeout via `AbortController` (8 s)
+* Homepage
+* Features Section
+* Pricing Section
+* Mobile View
+* Dark Mode
 
 ---
 
-## Git Workflow (5 marks)
+## Deployment
 
-Commits to recreate:
+The project is deployed on Netlify:
 
-```bash
-git init
-git add index.html
-git commit -m "Initial layout setup"
-
-git add css/style.css
-git commit -m "Responsive navbar completed"
-
-git add css/ js/
-git commit -m "Feature section added"
-
-git add js/app.js
-git commit -m "Form validation implemented"
-
-git add .
-git commit -m "Final optimization and cleanup"
-```
+https://tubular-gaufre-bd4544.netlify.app/
 
 ---
 
-## Setup (no build step needed)
+## Author
 
-```bash
-# Clone / copy the folder, then open locally:
-open index.html
+Khathija
 
-# Or serve with any static server:
-npx serve .
-python3 -m http.server 3000
-```
-
----
-
-## Design Decisions
-
-- **Dark-first palette** — `#0B0F1A` base with a blue-to-violet gradient accent; feels native to developer and SaaS audiences
-- **Syne + Inter** — Display face has personality without being illegible; Inter is the industry standard for UI
-- **Signature element** — The floating stat cards on the hero mockup give immediate credibility and visual depth without needing real product screenshots
+O2H Front-End Developer Assessment Submission
